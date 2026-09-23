@@ -39,14 +39,14 @@ export function PhoneMockup({ className }: { className?: string }) {
             <div className="size-24 overflow-hidden rounded-full border-4 border-white bg-neutral-100 shadow-md">
               <Image
                 src="/images/david-avatar.png"
-                alt="David Mwangi"
+                alt="Shem Collins"
                 width={96}
                 height={96}
                 className="size-full object-cover"
               />
             </div>
             <h3 className="mt-3 text-lg font-bold text-neutral-900">
-              David Mwangi
+              Shem Collins
             </h3>
             <p className="text-sm font-medium text-brand-orange">
               Marketing Consultant
