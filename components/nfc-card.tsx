@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Nfc } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { ZoryqLogo } from './zoryq-logo'
@@ -91,26 +92,42 @@ export function NfcCard({
         </div>
 
         <div className="flex items-end justify-between">
-          <div>
-            <p
+          <div className="flex items-center gap-3">
+            <div
               className={cn(
-                'text-[11px] font-semibold uppercase tracking-[0.2em]',
-                isPurple ? 'text-white/60' : 'text-neutral-400',
+                'size-14 shrink-0 overflow-hidden rounded-full border-2 shadow-md',
+                isPurple ? 'border-white/40' : 'border-brand-purple/20',
               )}
             >
-              The future is now
-            </p>
-            <p className="mt-1 text-lg font-bold">David Mwangi</p>
-            <p
-              className={cn(
-                'text-sm',
-                isPurple ? 'text-white/70' : 'text-neutral-500',
-              )}
-            >
-              Marketing Consultant
-            </p>
+              <Image
+                src="/images/david-avatar.png"
+                alt="David Mwangi"
+                width={56}
+                height={56}
+                className="size-full object-cover"
+              />
+            </div>
+            <div>
+              <p
+                className={cn(
+                  'text-[11px] font-semibold uppercase tracking-[0.2em]',
+                  isPurple ? 'text-white/60' : 'text-neutral-400',
+                )}
+              >
+                The future is now
+              </p>
+              <p className="mt-1 text-lg font-bold">David Mwangi</p>
+              <p
+                className={cn(
+                  'text-sm',
+                  isPurple ? 'text-white/70' : 'text-neutral-500',
+                )}
+              >
+                Marketing Consultant
+              </p>
+            </div>
           </div>
-          <QrGlyph className="size-16" />
+          <QrGlyph className="size-14" />
         </div>
       </div>
     </div>

@@ -64,6 +64,12 @@ export function Hero() {
             </h1>
           </Reveal>
 
+          <Reveal delay={110}>
+            <p className="mt-3 text-sm font-semibold uppercase tracking-[0.18em] text-brand-purple">
+              Now on GitHub
+            </p>
+          </Reveal>
+
           <Reveal delay={140}>
             <p className="mt-4 text-xl font-semibold text-neutral-800">
               Tap. Share. Connect instantly.
